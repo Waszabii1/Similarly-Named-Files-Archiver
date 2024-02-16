@@ -16,8 +16,8 @@ else:
     target_dir_root = pathlib.Path(target_dir_input)
 print(target_dir_root)
 target_dir_root.mkdir(exist_ok=True)
-fold_num_input = int(input("How many numbers do you want to archive by? \nE.g. If you want 4150987 to go into folder 4150 the number would be 4 "))
-x_num_input = int(input("How many x's do you want after the folder name \nE.g. If you want 4150987 to go into folder 4150xxx the number would be 3 "))
+fold_num_input = int(input("How many numbers do you want to archive by? \nE.g. If you want 1000123 to go into folder 1000 the number would be 4 "))
+x_num_input = int(input("How many x's do you want after the folder name \nE.g. If you want 1000123 to go into folder 1000xxx the number would be 3 "))
 
 for file in source_dir.glob("*.*"):
     fold_keys.add(file.stem[:fold_num_input])
